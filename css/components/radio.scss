@@ -2,10 +2,16 @@
   display: flex;
   cursor: pointer;
   user-select: none;
+  align-items: center;
+  margin: 2px 35px 21px 4px;
+
+  @include phones {
+    margin-bottom: rem(10px);
+  }
 
   &--checkbox {
     .radio__visible {
-      border-radius: 0;
+      border-radius: rem(3px);
 
       &:before {
         background: url("../img/icon/tick.png") center center no-repeat;
@@ -18,19 +24,24 @@
   display: none;
 
   &:checked ~ .radio__visible {
-    &::before {
+    &:before {
       display: block;
     }
 
   }
 }
 
+.radio-title {
+  margin-left: 11px;
+}
+
 .radio__visible {
   width: rem(26px);
   height: rem(26px);
   position: relative;
-  background: fff;
+  background: #fff;
   border-radius: 50%;
+  margin-right: 10px;
 
   &:before {
     content: "";
@@ -39,9 +50,9 @@
     background: #365a49;
     border-radius: 50%;
     position: absolute;
-    // display: none;
-    top: rem(50px);
-    left: rem(50px);
+    display: none;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
   }
 }

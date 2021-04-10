@@ -1,7 +1,7 @@
 .btn {
   font-size: rem(19px);
   font-weight: bold;
-  padding: rem(18px) rem(35px);
+  padding: rem(21px) rem(40px);
   text-transform: uppercase;
   border-radius: rem(100px);
   line-height: 1;
@@ -31,12 +31,14 @@
 
   &--theme--transparent {
     background: transparent;
-    color: #000;
+    color: $darkGreen;
     text-transform: none;
+    font-weight: Normal;
 
     &:hover {
-      color: $darkGreen;
-      background: $darkGreen;
+      color: #000;
+      // background: $darkGreen;
+      font-weight: Normal;
     }
   }
 }

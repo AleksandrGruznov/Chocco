@@ -32,7 +32,7 @@
 }
 
 .hero__title-section {
-  width: 46%;
+  width: 39%;
 
   @include tablets {
     width: 100%;
@@ -77,16 +77,17 @@
 }
 
 .hero__main-title {
-  font-size: rem(48px);
-  line-height: 1.1;
+  font-size: 48px;
+  line-height: 1.2;
   font-weight: bold;
-  margin-bottom: rem(15px);
+  margin-bottom: 0px;
   text-transform: uppercase;
 }
 
 .hero__title-desc {
   font-size: rem(21px);
-  margin-bottom: rem(28px);
+  margin-top: rem(22px);
+  margin-bottom: rem(30px);
   padding-right: 10%;
 
   @include tablets {
@@ -98,4 +99,3 @@
   }
 
 }
-

@@ -5,11 +5,15 @@
     padding: 0 19%;
     flex-direction: column;
   }
+
+  @include phones {
+    padding: 0;
+  }
 }
 
 .form__column {
   flex: 1;
-  margin-right: rem(20px);
+  margin-right: rem(31px);
 
   &:last-child {
     margin-right: 0;
@@ -39,6 +43,7 @@
   border: none;
   padding: rem(18px) rem(11px);
   border: solid rem(3px) transparent;
+  border-radius: 5px;
 
   &--textarea {
     height: rem(180px);
@@ -54,9 +59,17 @@
 .form__controls {
   display: flex;
   flex-wrap: wrap;
+
+  @include phones {
+    justify-content: center;
+  }
 }
 
 .form__btn {
   display: flex;
   justify-content: center;
+}
+
+.form__btns {
+  margin-top: rem(28px);
 }

@@ -1,22 +1,31 @@
 .reviews-section {
   position: relative;
-  background: url("../img/decor/half-leaf.png") left bottom -50% no-repeat;
+  background: url("../img/decor/half-leaf.png") left bottom -25% no-repeat;
   height: 100vh;
   min-height: rem(650px);
   position: relative;
 
   &:before {
     position: absolute;
-    bottom: rem(500px);
-    right: 0;
+    position: absolute;
+    top: rem(130px);
+    right: rem(25px);
     content: url("../img/decor/cereal-and-berry.png");
+
+    @include phones {
+      display: none;
+    }
   }
 
   &:after {
     content: url("../img/decor/berry-blueberry-raspberry.png");
     position: absolute;
-    bottom: rem(-40px);
+    bottom: rem(-54px);
     left: 0;
+
+    @include phones {
+      display: none;
+    }
   }
 
   // &:after {
@@ -59,8 +68,8 @@
 }
 
 .reviews__avatar {
-  width: rem(254px);
-  height: rem(260px);
+  width: rem(251px);
+  height: rem(263px);
 
   @include tablets {
     width: rem(130px);
@@ -76,27 +85,31 @@
 
 .reviews__content {
   flex: 1;
-  margin-left: rem(20px);
+  margin-left: rem(67px);
 }
 
 .reviews__title {
   font-size: rem(30px);
   font-weight: bold;
-  margin-bottom: rem(22px);
+  margin-top: rem(9px);
+  margin-bottom: rem(11px);
   color: #000;
 }
 
 .reviews__text {
   margin-bottom: rem(36px);
+  padding-right: 23%;
 }
 
 .reviews__author {
   font-size: rem(18px);
   font-weight: bold;
+  margin-top: rem(26px);
   color: #000;
 }
 
 .reviews__switcher{
   display: flex;
   justify-content: center;
+  margin-top: rem(34px);
 }

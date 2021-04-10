@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: center;
 
-  &--font-color--green {
+  .order-section {
     color: $darkGreen;
 
     .section__title {
@@ -20,14 +20,37 @@
   margin-bottom: rem(60px);
   text-align: center;
   text-transform: uppercase;
-  color: #000;
+  color: #365A49;
 }
 
 .order-section {
-  background: url("../img/bg/bg-delivery.png") right bottom no-repeat;
+  background: url("../img/bg/cta-delivery.png") center center repeat;
   // background-color: $blue;
   height: 100vh;
   min-height: rem(650px);
-  color: #fff;
   position: relative;
+  color: $darkGreen;
+
+
+  &:before {
+    position: absolute;
+    bottom: rem(40px);
+    right: rem(10px);
+    content: url("../img/decor/leaf-delivery.png");
+
+    @include phones {
+      display: none;
+    }
+  }
+
+  &:after {
+    content: url("../img/decor/berry-deliv.png");
+    position: absolute;
+    bottom: rem(54px);
+    left: rem(47px);
+    
+    @include phones {
+      display: none;
+    }
+  }
 }

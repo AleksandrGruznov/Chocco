@@ -4,6 +4,7 @@
   @include phones {
     flex-direction: column;
     display: flex;
+    text-align: left;
   }
 }
 
@@ -18,15 +19,26 @@
 }
 
 .benefit__icon {
+  min-width: 0;
   width: rem(75px);
   height: rem(69px);
   position: absolute;
-  top: 21%;
-  left: 20%;
-  transform: translate(-50, -50%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .benefit__title {
   font-size: rem(27px);
   font-weight: bold;
+  color: #000;
+}
+
+.benefit__image {
+  margin-bottom: rem(19px);
+
+  @include phones {
+    margin-bottom: 0;
+    margin-right: rem(20px);
+  }
 }
